@@ -1,7 +1,7 @@
 const express = require("express");
 const User = require("./models").user;
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 const cors = require("cors");
 
 // First thing to do app.use on.
